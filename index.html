@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sao Paulo Metro Shortest Paths</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <main>
+        <div id="controls">
+            <div class="control-group">
+                <label for="start">Start Station:</label>
+                <select id="start"></select>
+            </div>
+            <div class="control-group">
+                <label for="end">End Station:</label>
+                <select id="end"></select>
+            </div>
+            <button onclick="calculatePath()">Calculate Path</button>
+        </div>
+        <div id="content">
+            <div id="map-container">
+                <div id="map"></div>
+            </div>
+            <div id="result"></div>
+        </div>
+    </main>
+    <footer>
+        <p>Dataset from <a href="https://www.kaggle.com/datasets/thiagodsd/sao-paulo-metro">Kaggle.</a></p>
+    </footer>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
